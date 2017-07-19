@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xdandroid.hellodaemon">
+
+
+
+    <application android:label="@string/app_name">
+
+        <!--<receiver-->
+            <!--android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.WakeUpReceiver"-->
+            <!--android:process=":watch">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.USER_PRESENT"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>-->
+                <!--<action android:name="com.xdandroid.hellodaemon.CANCEL_JOB_ALARM_SUB"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<receiver-->
+            <!--android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.WakeUpReceiver$WakeUpAutoStartReceiver"-->
+            <!--android:process=":watch">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED"/>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED"/>-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.AbsWorkService$WorkNotificationService"/>-->
+
+        <!--<service-->
+            <!--android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.JobSchedulerService"-->
+            <!--android:permission="android.permission.BIND_JOB_SERVICE"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"-->
+            <!--android:process=":watch"/>-->
+
+        <!--<service-->
+            <!--android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.WatchDogService"-->
+            <!--android:process=":watch"/>-->
+
+        <!--<service-->
+            <!--android:name="com.xdandroid.hellodaemon.com.xdandroid.sample.lib.WatchDogService$WatchDogNotificationService"-->
+            <!--android:process=":watch"/>-->
+
+    </application>
+
+</manifest>
